@@ -1,4 +1,4 @@
-# trac-mail-references-plugin
+# trac-references-mail-decorator
 
 ## License
 
