@@ -14,6 +14,10 @@ This plugin is a workaround plugin.  It will copy `Message-ID` to `References` i
 * Restart Trac process.
 * Enable it in admin interface's plugin section.
 
+## See also
+
+https://github.com/weisslj/trac-messageid-plugin is also trying to solve this issue, with different approach.
+
 ## License
 
 See [LICENSE](LICENSE) file.
