@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="trac_references_email_decorator",
+    name="TracReferencesEmailDecorator",
     version="0.20190929.0",
     author="Gea-Suan Lin",
     author_email="darkkiller@gmail.com",
