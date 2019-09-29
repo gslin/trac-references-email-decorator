@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires=">=2.7",
     entry_points={
-        "trac.plugins": "%s = %s" % (PACKAGE, PACKAGE),
+        "trac.plugins": "TracReferencesEmailDecorator = TracReferencesEmailDecorator"
     },
 )
