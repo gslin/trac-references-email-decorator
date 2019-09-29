@@ -16,7 +16,7 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Apprived :: MIT License",
-        "Operating System :: OS :: Independent"
+        "Operating System :: OS :: Independent",
     ],
     python_requires=">=2.7",
     entry_points={
