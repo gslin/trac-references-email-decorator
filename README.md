@@ -10,9 +10,9 @@ This plugin is a workaround plugin.  It will copy `Message-ID` to `References` i
 
 ## Install
 
-* This plugin is a single file plugin, so you'll need to copy `ReferencesEmailDecorator.py` into Trac's `plugins/` directory.
-* Restart Trac process.
-* Enable it in admin interface's plugin section.
+    pip install git+https://github.com/gslin/trac-references-mail-decorator.git
+
+Then restart Trac and enable it from the admin interface.
 
 ## See also
 
