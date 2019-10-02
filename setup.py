@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="TracReferencesEmailDecorator",
-    version="0.20190929.0",
+    version="0.20191002.0",
     author="Gea-Suan Lin",
     author_email="darkkiller@gmail.com",
     description="Add header's Message-ID field to References field for Trac.",
