@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/gslin/trac-references-email-decorator",
     packages=setuptools.find_packages(),
+    install_requires=["Trac>=1.1.3"],
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Apprived :: MIT License",
