@@ -8,5 +8,6 @@ class ReferencesEmailDecorator(Component):
     implements(IEmailDecorator)
 
     def decorate_message(self, event, message, charset):
+        set_header(message, 'X-Trac-Message-ID', message['Message-ID'], charset)
         if not 'References' in message:
             set_header(message, 'References', message['Message-ID'], charset)
