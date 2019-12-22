@@ -8,5 +8,11 @@ class ReferencesEmailDecorator(Component):
     implements(IEmailDecorator)
 
     def decorate_message(self, event, message, charset):
-        if 'created' == event.category:
-            set_header(message, 'References', message['Message-ID'], charset)
+        domain = self.config.get('notification', 'smtp_from') or \
+            self.config.get('notification', 'smtp_replyto')
+        ticket = event.target
+
+        mid = '<ticketref{}@{}>'.format(ticket.id, domain)
+        if 'References' in message:
+            mid += ' ' + message['References']
+        set_header(message, 'References', mid, charset)
