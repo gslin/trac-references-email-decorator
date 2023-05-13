@@ -4,11 +4,13 @@ This Trac plugin will add header's `Message-ID` field to `References` field.
 
 ## Background
 
-Amazon SES will change header's `Message-ID` to its own format, which causes mail clients unable to identify the first mail and other followings are in the same thread.  (Mails from second mail have `References` field.)
+Amazon SES changes header's `Message-ID` to its own format, which causes mail clients unable to identify the relation of threading.  (Mails from second mail have `References` field.)
 
-This plugin is a workaround plugin.  It will copy `Message-ID` to `References` if no `References` field existed, which rebuild relationship between first mail and other followings.
+This plugin implements an workaround.  It will copy `Message-ID` to `References` if no `References` field existed, therefore rebuild relationship between first mail and followings.
 
 ## Install
+
+Only tested on Trac 1.4, but may work on Trac 1.2 since it uses `IEmailDecorator` only.
 
     pip install git+https://github.com/gslin/trac-references-mail-decorator.git
 
